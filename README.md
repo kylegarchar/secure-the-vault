@@ -13,7 +13,7 @@
 const firstMsg = `You have received this message because you have been chosen to open an important vault.`
 ```
 
-display the alert message
+- display the alert message
 ```javascript
 alert(firstMsg)
 ```
