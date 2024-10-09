@@ -7,17 +7,36 @@
 ```html
   <script src="index.js"></script>
 ```
-- in the index.js page, first alert the user they're receiving this message because they've been choosen to open an important vault
+- in the index.js page, set a constant for the first alert message
 
 ```javascript
-alert(`You have received this message because you have been chosen to open an important vault.`)
+const firstMsg = `You have received this message because you have been chosen to open an important vault.`
 ```
 
-- next, set constant declaration for each of the the 3 combination numbers, including the mathematic 
+display the alert message
+```javascript
+alert(firstMsg)
+```
+- define the elements of the second alert message
 
-const num = 40
+```javascript
+const secondMsg = "Here is the secret combination:"
+```
+
+- set the variables for each of the the equations that equal the correct number combination
+
+```javascript
 const num1 = 2*5
 const num2 = 80/2
 const num3 = 40-1
+```
+ 
+- combine the variables to build the intended message output
+```javascript
+const fullMsg = `${secondMsg} ${num1} - ${num2} - ${num3}`
+```
 
-alert(`Here is the secret combination: ` + num/4 + " - " + num + " - " + num-1 )
+- execute the second alert
+```javascript
+alert(fullMsg)
+```
